@@ -12,19 +12,26 @@ for (let i = 1; i<101; i++) {
     const stickernumb = i;
     const div = document.createElement('div');
     div.classList.add('box');
-    div.append(stickernumb);
     container.append(div);
 
     if (i % 3 == 0 && i%5 != 0) {
-        div.classList.add('yellow');
+        div.classList.add('green');
+        div.append('FIZZ');
+
     }
 
     else if (i%5 == 0 && i%3 != 0) {
-        div.classList.add('green');
+        div.classList.add('yellow');
+        div.append('BUZZ');
     }
     
     else if ((i % 5 == 0) && (i % 3 == 0)) {
         div.classList.add('barbie');
+        div.append('FIZZBUZZ');
+    }
+
+    else {
+        div.append(stickernumb);
     }
 }
 
