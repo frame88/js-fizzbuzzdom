@@ -14,21 +14,21 @@ for (let i = 1; i<101; i++) {
     div.classList.add('box');
     container.append(div);
 
-    if (i % 3 == 0 && i%5 != 0) {
-        div.classList.add('green');
-        div.append('FIZZ');
-
+    if ((i % 5 == 0) && (i % 3 == 0)) {
+        div.classList.add('barbie');
+        div.append('FIZZBUZZ');
     }
 
-    else if (i%5 == 0 && i%3 != 0) {
+    else if (i % 3 == 0 ) {
+        div.classList.add('green');
+        div.append('FIZZ');
+    }
+
+    else if (i%5 == 0 ) {
         div.classList.add('yellow');
         div.append('BUZZ');
     }
     
-    else if ((i % 5 == 0) && (i % 3 == 0)) {
-        div.classList.add('barbie');
-        div.append('FIZZBUZZ');
-    }
 
     else {
         div.append(stickernumb);
