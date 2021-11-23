@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 80%;
+    margin: 0 auto;
+    background: blue;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.green {
+    background: rgb(62, 197, 163);
+}
+
+.azure {
+    background: rgb(23, 138, 184);
+}
+
+.barbie {
+    background: rgb(241, 33, 214);
+}
