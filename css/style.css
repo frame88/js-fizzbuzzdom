@@ -17,8 +17,9 @@
 }
 
 .box {
-    width: 200px;
-    height: 200px;
+    width: 170px;
+    height: 170px;
+    background: rgb(23, 138, 184);
 }
 
 .yellow {
@@ -30,7 +31,6 @@
 }
 
 .azure {
-    background: rgb(23, 138, 184);
 }
 
 .barbie {

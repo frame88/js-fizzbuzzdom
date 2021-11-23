@@ -13,7 +13,18 @@ for (let i = 1; i<101; i++) {
     const div = document.createElement('div');
     div.classList.add('box');
     div.append(stickernumb);
-    
     container.append(div);
+
+    if (i % 3 == 0 && i%5 != 0) {
+        div.classList.add('yellow');
+    }
+
+    else if (i%5 == 0 && i%3 != 0) {
+        div.classList.add('green');
+    }
+    
+    else if ((i % 5 == 0) && (i % 3 == 0)) {
+        div.classList.add('barbie');
+    }
 }
 
